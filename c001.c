@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {        
- //test
+
     int size = 0;
     int stars = 0, blank1 = 0, blank2 = 0;
     int i = 0, j = 0;
