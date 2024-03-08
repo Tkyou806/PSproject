@@ -5,7 +5,7 @@ Programming Studio C003
 #include <stdlib.h>
 #include <time.h>
 
-int findRoom(
+int findRoom( 
     int persons[5]); // 5개의 호실 중 빈 베드가 있는 방을 찾아낸다. (리턴값 1~5)
 
 void printReport(char mn[10][20], int mr[10], int mc, char wn[10][20],
