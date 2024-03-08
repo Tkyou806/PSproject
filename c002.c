@@ -14,7 +14,7 @@ int i, j; // 반복문을 위한 변수
 #include <stdio.h>
 
 int main()
-{
+{ 
 
     int person[4][3] = {0}; // 4개 층별 3개 호실의 점호 인원 수
     int sum[3] = {0};       // ( , , ) 점호 인원 수 합계 남 여 전체
