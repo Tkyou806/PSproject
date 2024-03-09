@@ -108,16 +108,18 @@ void printReport(char mn[10][20], int mr[10], int mc, char wn[10][20], int wr[10
   printf("\n");
   
   // 호실별 배정 명단
+  //방을 순서대로 표현하고 그에 해당하는 학생을 최대 2명까지 표시해야 하므로 조건문 이용한다.
   printf("호실별 배정 명단\n");
   for (int i = 0; i < 2; i++)
-  {
+  {//남학생
     if (i == 0)
     {
       for (int j = 0; j < 5; j++)
       {
+        //호실
         printf("%d0%d : ", i + 1, j + 1);
         for (int k = 0; k < 10; k++)
-        {
+        {//각각 남학생의 호수와 지금 찍히는 호수가 같은지 비교 후 같다면 프린트한다.
           if (mr[k] == (i + 1) * 100 + (j + 1))
           {
             printf("%s ", mn[k]);
@@ -125,15 +127,16 @@ void printReport(char mn[10][20], int mr[10], int mc, char wn[10][20], int wr[10
         }
         printf("\n");
       }  
-    }
+    }//여학생
     else if (i == 1) 
     {
       for (int j = 0; j < 5; j++)
       {
+        //호실
         printf("%d0%d : ", i + 1, j + 1);
         for (int k = 0; k < 10; k++)
         {
-          //방호수가 맞다면 그에 해당하는 학생 이름 print하기
+          //각각 여학생의 호수와 지금 찍히는 호수가 같은지 비교 후 같다면 프린트한다.
           if (wr[k] == (i + 1) * 100 + (j + 1))
           {
             printf("%s ", wn[k]);
